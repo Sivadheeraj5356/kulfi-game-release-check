@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kulfi Game Release Check</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Kulfi product engineering</p>
+      <h1>Daily games need release checks, not vibes.</h1>
+      <p class="lede">Score a generated couple game before it ships: audience fit, loading, empty, error and retry states, plus the user signal that tells the team whether it worked.</p>
+    </section>
+    <section class="workspace">
+      <div class="editor">
+        <label for="gameInput">Game candidates</label>
+        <textarea id="gameInput" spellcheck="false">Memory Match for long-distance couples | partners in different cities who want a quick shared win | loading, empty, error, retry | completion and return next day
+Daily Prompt Remix |  | loading, error | shares</textarea>
+        <button id="checkButton" type="button">Check release readiness</button>
+      </div>
+      <div id="results" class="results" aria-live="polite">
+        <p class="empty-state">Add one game per line: name | audience | states | success signal.</p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
